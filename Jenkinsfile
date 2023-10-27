@@ -89,9 +89,6 @@ pipeline {
             steps {
                 script {
                     ansiblePlaybook become: true, credentialsId: 'ansible_credential', disableHostKeyChecking: true, installation: 'Ansible', inventory: '/etc/ansible/hosts', playbook: 'ansible-playbook.yml'
-                }
-            }
-		}
     }
 }
     }
